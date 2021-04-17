@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateTest" file="/app/core/modules/aggregator/tests/src/Functional/Update/AggregatorUpdateTest.php" tests="2" assertions="346" errors="1" failures="0" skipped="0" time="270.555376">
+    <testcase name="testSourceFeedRequired" class="Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateTest" classname="Drupal.Tests.aggregator.Functional.Update.AggregatorUpdateTest" file="/app/core/modules/aggregator/tests/src/Functional/Update/AggregatorUpdateTest.php" line="29" assertions="3" time="23.629886">
+      <error type="Drupal\Core\Database\DatabaseExceptionWrapper">Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateTest::testSourceFeedRequired
+Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'drupal8.test68340121key_value' doesn't exist: SELECT name, value FROM {key_value} WHERE collection = :collection; Array
+(
+    [:collection] =&gt; system.schema
+)
+
+
+/app/core/lib/Drupal/Core/Database/Connection.php:701
+/app/core/lib/Drupal/Core/Database/Connection.php:665
+/app/core/lib/Drupal/Core/Database/Driver/mysql/Connection.php:357
+/app/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php:95
+/app/core/includes/schema.inc:86
+/app/core/tests/Drupal/Tests/UpdatePathTestTrait.php:63
+/app/core/tests/Drupal/FunctionalTests/Update/UpdatePathTestBase.php:295
+/app/core/modules/aggregator/tests/src/Functional/Update/AggregatorUpdateTest.php:35
+</error>
+    </testcase>
+    <testcase name="testUpdateIntervalDefaultValue" class="Drupal\Tests\aggregator\Functional\Update\AggregatorUpdateTest" classname="Drupal.Tests.aggregator.Functional.Update.AggregatorUpdateTest" file="/app/core/modules/aggregator/tests/src/Functional/Update/AggregatorUpdateTest.php" line="45" assertions="343" time="246.925490"/>
+  </testsuite>
+</testsuites>
